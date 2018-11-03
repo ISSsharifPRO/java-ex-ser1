@@ -9,35 +9,30 @@ public class question6{
 
 	public static String mix3(String num){
 		String out_finall = "";
-		if(num.length() <= 6){
+		if(num.length() <= 6)
 			out_finall = mix2(num);
-		}
-		if (num.length() == 7) {
+		if (num.length() == 7) 
 			out_finall=n12(num.charAt(0)+"")+" million, "+mix2(num.substring(1,7));
-		}
-		if (num.length() == 8) {
+		if (num.length() == 8) 
 			out_finall = n12(num.charAt(0)+""+num.charAt(1))+" million, "+mix2(num.substring(2,8));
-		}
-		if (num.length() == 9) {
+		if (num.length() == 9) 
 			out_finall = mix1(num.substring(0,3))+" million, "+mix2(num.substring(3,9));
-		}
 		return out_finall;
 	}
 
 	public static String mix2(String num){
 		String out2="";
-		if(num.length() <= 3){
+		if(num.length() <= 3)
 			out2 = mix1(num);
-		}
 		if (num.length() == 4){
 			if(num.substring(0,1).toString().trim().equals("0")){
 
 			}
 			else{
 			  out2 = mix1(num.substring(0,1))+" thousand";
-				if(num.substring(1,4) != ""){
+				if(num.substring(1,4) != "")
 				out2 += ", ";
-			}
+			
 			}
 			out2 += ""+mix1(num.substring(1,4));
 		}
@@ -47,9 +42,9 @@ public class question6{
 			}
 			else{
 			  out2 = mix1(num.substring(0,2))+" thousand";
-			if(num.substring(2,5) != ""){
+			if(num.substring(2,5) != "")
 				out2 += ", ";
-			}
+			
 			}
 			out2 += ""+ mix1(num.substring(2,5));
 		}
@@ -61,9 +56,9 @@ public class question6{
 			}
 			else{
 			  out2 = mix1(num.substring(0,3))+" thousand";
-			if(num.substring(3,6) != ""){
+			if(num.substring(3,6) != "")
 				out2 += ", ";
-			}
+			
 			}
 			
 			out2 += ""+mix1(num.substring(3,6));
