@@ -110,7 +110,7 @@ public class question6{
 			a=num.charAt(0);
 			b=num.charAt(1);
 		}
-// 1 ta 9
+
 		if(b=='1'&& a != '1')
 			out = "one";
 		if(b=='2'&& a != '1')
