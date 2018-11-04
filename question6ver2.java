@@ -6,7 +6,7 @@ public static void main(String[] args) {
 	if(!num.toString().trim().equals("0"))
 	System.out.println(n1to9(num));
 	else
-	System.out.print("ziro");
+	System.out.print("zero");
 }
 public static String n1to9(String num){
 String out="",  str1="" , str2="";
