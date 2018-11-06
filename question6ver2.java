@@ -82,7 +82,7 @@ if(num.length()==1 || num.length()==2)
 	out = n12(num);
 if (num.length()==3) {
 	out=n3(num.charAt(0));
-	if (num.charAt(1) !='0' && num.charAt(2) != 0)
+	if (num.charAt(1) !='0' || num.charAt(2) != 0)
 		out += " ";
 	out += n12(num.substring(1,3));
 	}
@@ -112,6 +112,7 @@ public static String n3 (char s){
 			out3 = "nine hundred";
 		return out3;
 	}
+// ex a problem => fixed!!
 public static String n12 (String num){
 		String out="" , out2="" , out3="";
 		char a=' ',b=' ',s=' ';
